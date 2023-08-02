@@ -40,11 +40,11 @@ class Router
         }
     }
 
-    public function render($view, $datos = [])
+    public function render($view, $data = [])
     {
 
         // Leer lo que le pasamos  a la vista
-        foreach ($datos as $key => $value) {
+        foreach ($data as $key => $value) {
             $$key = $value;
         }
 
